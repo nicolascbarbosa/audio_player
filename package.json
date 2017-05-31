@@ -1,0 +1,20 @@
+{
+  "name": "iclinic_challenge",
+  "version": "1.0.0",
+  "description": "Web app recruiting challenge for Iclinic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "localhost": "http-server -a localhost -p 8000 -c-1 ./app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolascbarbosa/iclinc_challenge.git"
+  },
+  "author": "nicolascb.claudio@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicolascbarbosa/iclinc_challenge/issues"
+  },
+  "homepage": "https://github.com/nicolascbarbosa/iclinc_challenge#readme"
+}

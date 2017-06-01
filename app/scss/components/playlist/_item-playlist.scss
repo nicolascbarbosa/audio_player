@@ -1,0 +1,7 @@
+.playlist {
+
+  & > .item {
+    margin: calculateRem(40px) calculateRem(20px);
+  }
+
+}

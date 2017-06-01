@@ -1,0 +1,8 @@
+.playlist {
+
+  & > .item > .cover {
+    width: 200px;
+    margin-bottom: calculateRem(20px);
+  }
+
+}

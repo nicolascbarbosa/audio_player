@@ -1,0 +1,18 @@
+.user-navigation {
+
+  & {
+    @extend %flexbox;
+    width: 100%;
+  }
+
+  & > .playlist {
+    color: #FFF;
+    @include flex(1 1 15%);
+    background-color: #4A4B4D;
+  }
+
+  & > .presentation {
+    @include flex(1 1 70%);
+  }
+
+}

@@ -1,0 +1,9 @@
+html {
+  @include font-size(1.4);
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+}

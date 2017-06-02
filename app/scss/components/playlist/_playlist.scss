@@ -3,3 +3,28 @@
 @import "description";
 @import "item-playlist";
 
+
+.user-navigation {
+
+  & {
+    @extend %flexbox;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc(100% - 120px);
+    background-color: #fafafa;
+  }
+
+  & > .playlist {
+    color: #FFF;
+    position: relative;
+    overflow: auto;
+    @include flex(1 1 30%);
+    background-color: #354458;
+  }
+
+  & > .presentation {
+    @include flex(1 1 70%);
+  }
+
+}

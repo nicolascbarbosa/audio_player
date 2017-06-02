@@ -14,36 +14,42 @@
   <main class="app-wrap">
     <section class="user-navigation">
       <aside class="playlist">
-        <figure class="item">
+        <figure class="item"
+                data-audio-src="http://reviewstalker.com/wp-content/uploads/2011/09/01-Randy-Described-Eternity.mp3"
+                data-album-src="Perfect_From_Now_On.jpg">
           <img class="cover" src="./img/cover.jpg" alt="descrição">
           <figcaption class="about">
             <h2 class="title">
-              Wish You Were Here
+              Randy Described Eternity
             </h2>
             <h4 class="description">
-              Pink Floyd
+              Built to Spill
             </h4>
           </figcaption><!-- /.about -->
         </figure><!-- /.item -->
-        <figure class="item">
+        <figure class="item"
+                data-audio-src="http://reviewstalker.com/wp-content/uploads/2011/09/01-Guns-of-Brixton-The-Clash-Cover.mp3"
+                data-album-src="TheClashLondonCallingalbumcover.jpg">
           <img class="cover" src="./img/cover.jpg" alt="descrição">
           <figcaption class="about">
             <h2 class="title">
-              Money
+              The Guns of Brixton
             </h2>
             <h4 class="description">
-              Pink Floyd
+              The Clash
             </h4>
           </figcaption><!-- /.about -->
         </figure><!-- /.item -->
-        <figure class="item">
+        <figure class="item"
+                data-audio-src="http://reviewstalker.com/wp-content/uploads/2011/09/02-Queen-Of-Hearts.mp3"
+                data-album-src="Queen_of_hearts_vinyl.jpg">
           <img class="cover" src="./img/cover.jpg" alt="descrição">
           <figcaption class="about">
             <h2 class="title">
-              Another Brick in the Wall Pt.2
+              Queen Of Hearts
             </h2>
             <h4 class="description">
-              Pink Floyd
+              Juice Newton
             </h4>
           </figcaption><!-- /.about -->
         </figure><!-- /.item -->
@@ -53,10 +59,10 @@
           <img class="cover" src="./img/presentation.jpg" alt="descrição">
           <figcaption class="about">
             <h2 class="title">
-              Comfortably Numb
+              <!--Comfortably Numb-->
             </h2>
             <h4 class="artist">
-              Pink Floyd
+              <!--Pink Floyd-->
             </h4>
           </figcaption><!-- /.about -->
         </figure><!-- /.audio-info -->
@@ -65,9 +71,9 @@
     <section class="controls-bar">
       <div class="actions">
         <div class="audio-state">
-          <button class="button -prev-track"></button>
-          <button class="button -play-and-pause"></button>
-          <button class="button -next-track"></button>
+          <button class="button -prev-track js"></button>
+          <button class="button -play-and-pause js"></button>
+          <button class="button -next-track js"></button>
         </div><!-- /.audio-state -->
         <div class="volume-state">
           <button class="button -volume"></button>
@@ -79,6 +85,7 @@
         <audio class="js-audio-player">
           <source src="http://reviewstalker.com/wp-content/uploads/2011/09/01-Randy-Described-Eternity.mp3" type="audio/mpeg" />
         </audio>
+        <progress class="js-audio-progress" value="0" max="100"></progress>
         <span class="timer js-timer-finish">00:00</span>
       </div>
     </section>

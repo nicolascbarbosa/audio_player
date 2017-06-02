@@ -3,5 +3,11 @@
   @include flex-direction(column);
   width: 100%;
   color: #FFF;
-  background-color: #0098D9;
+  background-color: #248BCE;
+}
+
+.controls-bar {
+  position: absolute;
+  bottom: 0;
+  height: 120px;
 }

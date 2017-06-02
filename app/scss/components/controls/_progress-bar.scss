@@ -1,0 +1,19 @@
+.progress > .audio-progress {
+  position: relative;
+  overflow: hidden;
+  margin-left: calculateRem(20px);
+  margin-right: calculateRem(20px);
+  width: 60%;
+  border-radius: 10px;
+
+  @include progress-bar {
+    background-color: #ccc;
+    border: 0;
+    @include appearance();
+  }
+
+  @include progress-bar-value {
+    background-color: #354458;
+  }
+
+}

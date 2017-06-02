@@ -1,13 +1,54 @@
 .controls-bar {
-  @extend %flexbox;
-  @include flex-direction(column);
-  width: 100%;
-  color: #FFF;
-  background-color: #248BCE;
-}
 
-.controls-bar {
-  position: absolute;
-  bottom: 0;
-  height: 120px;
+  & {
+    @extend %flexbox;
+    @include flex-direction(column);
+    width: 100%;
+    color: #FFF;
+    background-color: #248BCE;
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+  }
+
+
+  & > .actions {
+    position: relative;
+    @extend %flexbox;
+    @include flex(1);
+  }
+
+  & > .actions > .audio-state {
+    @extend %flexbox;
+    @include flex(1);
+    @include align-items(center);
+    @include justify-content(center);
+  }
+
+  & > .actions > .audio-state > .button.-play-and-pause {
+    margin-left: calculateRem(20px);
+    margin-right: calculateRem(20px);
+  }
+
+  & > .actions > .volume-state {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    @include transform(translateY(-50%));
+    padding-right: calculateRem(20px);
+  }
+
+
+  & > .progress {
+    @extend %flexbox;
+    @include flex(1);
+    @include align-items(center);
+    @include justify-content(center);
+  }
+
+  & > .progress > .audio {
+    display: none;
+  }
+
+
 }

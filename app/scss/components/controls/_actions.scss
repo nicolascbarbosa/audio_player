@@ -1,8 +1,0 @@
-.controls-bar {
-
-  & > .actions {
-    @extend %flexbox;
-    @include flex(1);
-  }
-
-}

@@ -1,7 +1,19 @@
+/*
+  Mixins
+=====================================================================
+*/
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  transition: $transition;
+}
 
-//
-// REM Unit Calc
-//==============================================
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  transform: $transform;
+}
+
 @function calculateRem($size) {
   $remSize: $size / 16px;
   @return #{$remSize}rem;
@@ -10,4 +22,61 @@
 @mixin font-size($sizeValue: 1.6) {
   font-size: ($sizeValue * 10) + px;
   font-size: calculateRem($sizeValue+px);
+}
+
+@mixin appearance {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
+@mixin progress-bar {
+
+  & {
+    @content;
+  }
+
+  &::-webkit-progress-bar {
+    @content;
+  }
+
+}
+@mixin progress-bar-value {
+
+  &::-webkit-progress-value {
+    @content;
+  }
+
+  &::-moz-progress-bar {
+    @content;
+  }
+
+}
+
+
+@mixin media-queries($size) {
+  @if $size == small  {
+    @media only screen and (max-width: $mq-small) {
+      @content;
+    }
+  }
+
+  @else if $size == medium-min {
+    @media only screen and (min-width: $mq-medium-min) {
+      @content;
+    }
+  }
+
+  @else if $size == medium-max {
+    @media only screen and (max-width: $mq-medium-max) {
+      @content;
+    }
+  }
+
+  @else if $size == large  {
+    @media only screen and (min-width: $mq-large) {
+      @content;
+    }
+  }
 }

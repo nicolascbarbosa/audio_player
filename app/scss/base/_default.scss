@@ -1,10 +1,19 @@
 html {
   @include font-size(1.4);
+}
+
+html,
+body {
   height: 100%;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   position: relative;
-  min-height: 100%;
+}
+
+.app-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
 }

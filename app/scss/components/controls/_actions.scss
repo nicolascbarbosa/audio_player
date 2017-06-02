@@ -1,6 +1,7 @@
 .controls-bar {
 
-  & > .progress {
+  & > .actions {
+    @extend %flexbox;
     @include flex(1);
   }
 

@@ -1,5 +1,6 @@
 .controls-bar {
   @extend %flexbox;
+  @include flex-direction(column);
   width: 100%;
   color: #FFF;
   background-color: #0098D9;
